@@ -1,7 +1,11 @@
-
-# Playwright
 node_modules/
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+.pnpm_store
+results.xml
+.scannerwork
+allure-results/
+downloads/
+tests/functional_tests/clients/payments/validateBCEAndPayrollJourney_test.spec.ts-snapshots/**-win32.png
