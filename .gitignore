@@ -8,4 +8,3 @@ results.xml
 .scannerwork
 allure-results/
 downloads/
-tests/functional_tests/clients/payments/validateBCEAndPayrollJourney_test.spec.ts-snapshots/**-win32.png

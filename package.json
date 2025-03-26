@@ -5,8 +5,6 @@
   "main": "index.js",
   "scripts": {
     "single-script": "pnpm run lint && cross-env KEY=test pnpm exec playwright test --workers 2 --headed --max-failures=5 --grep @test --trace on --project=chromium",
-    "smoke-suite": "pnpm run lint && cross-env KEY=test TESTRAIL=NO TESTRAILRUNID=368301 pnpm exec playwright test --workers 2 --max-failures=8 --grep smoke --trace on --project='chromium'",
-    "regression-suite": "pnpm run lint && cross-env KEY=test TESTRAIL=NO TESTRAILRUNID=368301 pnpm exec playwright test --workers 2 --headed --max-failures=2 --grep  \"@smoke|@regression\" --trace on --project='chromium'",
     "regression_chromium": "pnpm run lint && pnpm exec playwright test --workers $WORKER_COUNT --max-failures=5 --grep $TAG_NAME --trace on --project=chromium --retries=3",
     "regression_chrome": "pnpm run lint && pnpm exec playwright test --workers $WORKER_COUNT --max-failures=5 --grep $TAG_NAME --trace on --project=chrome",
     "show-trace": "npx playwright show-trace C:\\Users\\{userName}\\Downloads\\{tracefileName}.zip",
